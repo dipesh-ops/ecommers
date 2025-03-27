@@ -100,7 +100,7 @@ const UpdateProductPage = () => {
         <div>
             <div className='flex justify-center items-center h-screen'>
                 {/* Login Form  */}
-                <div className="login_Form bg-blue-50 px-8 py-6 border border-blue-100 rounded-xl shadow-md">
+                <div className="login_Form flex flex-col justify-center items-center w-[90%] md:w-[40%] bg-blue-50 px-8 py-6 border border-blue-100 rounded-xl shadow-md">
 
                     {/* Top Heading  */}
                     <div className="mb-5">
@@ -122,7 +122,7 @@ const UpdateProductPage = () => {
                                 })
                             }}
                             placeholder='Product Title'
-                            className='bg-blue-50 border text-blue-300 border-blue-200 px-2 py-2 w-96 rounded-md outline-none placeholder-blue-300'
+                            className='bg-blue-50 border text-blue-300 border-blue-200 px-2 py-2 w-75 md:w-96 rounded-md outline-none placeholder-blue-300'
                         />
                     </div>
 
@@ -139,7 +139,7 @@ const UpdateProductPage = () => {
                                 })
                             }}
                             placeholder='Product Price'
-                            className='bg-blue-50 border text-blue-300 border-blue-200 px-2 py-2 w-96 rounded-md outline-none placeholder-blue-300'
+                            className='bg-blue-50 border text-blue-300 border-blue-200 px-2 py-2 w-75 md:w-96 rounded-md outline-none placeholder-blue-300'
                         />
                     </div>
 
@@ -156,7 +156,7 @@ const UpdateProductPage = () => {
                                 })
                             }}
                             placeholder='Product Image Url'
-                            className='bg-blue-50 border text-blue-300 border-blue-200 px-2 py-2 w-96 rounded-md outline-none placeholder-blue-300'
+                            className='bg-blue-50 border text-blue-300 border-blue-200 px-2 py-2 w-75 md:w-96 rounded-md outline-none placeholder-blue-300'
                         />
                     </div>
 
@@ -170,7 +170,7 @@ const UpdateProductPage = () => {
                                 category : e.target.value
                             })
                         }}
-                            className="w-full px-1 py-2 text-blue-300 bg-blue-50 border border-blue-200 rounded-md outline-none  ">
+                            className="w-75 md:w-96 px-1 py-2 text-blue-300 bg-blue-50 border border-blue-200 rounded-md outline-none  ">
                             <option disabled>Select Product Category</option>
                             {categoryList.map((value, index) => {
                                 const { name } = value
@@ -192,7 +192,7 @@ const UpdateProductPage = () => {
                                     description : e.target.value
                                 })
                             }}
-                            placeholder="Product Description" rows="5" className=" w-full px-2 py-1 text-blue-300 bg-blue-50 border border-blue-200 rounded-md outline-none placeholder-blue-300 ">
+                            placeholder="Product Description" rows="5" className="w-75 md:w-96 px-2 py-1 text-blue-300 bg-blue-50 border border-blue-200 rounded-md outline-none placeholder-blue-300 ">
                         </textarea>
                     </div>
 
@@ -201,7 +201,7 @@ const UpdateProductPage = () => {
                         <button
                         onClick={updateProduct}
                             type='button'
-                            className='bg-blue-500 hover:bg-blue-600 w-full text-white text-center py-2 font-bold rounded-md '
+                            className='bg-blue-500 hover:bg-blue-600 w-75 md:w-96 text-white text-center py-2 font-bold rounded-md '
                         >
                             Update Product
                         </button>
