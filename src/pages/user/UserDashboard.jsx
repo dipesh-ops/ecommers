@@ -56,7 +56,7 @@ const UserDashboard = () => {
                                                                 <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-1">
                                                                     <div className="mb-4">
                                                                         <div className="text-sm font-semibold text-black">Order Id</div>
-                                                                        <div className="text-sm font-medium text-gray-900">{id}</div>
+                                                                        <div className="text-sm font-medium text-gray-900">{id.slice(0,14)}</div>
                                                                     </div>
 
                                                                     <div className="mb-4">
